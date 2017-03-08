@@ -226,6 +226,7 @@ std::string& get_global_error_string()
     static std::string global_error_string = std::string("");
     return global_error_string;
 }
+}
 
 const char *af_err_to_string(const af_err err)
 {
@@ -254,5 +255,4 @@ const char *af_err_to_string(const af_err err)
     case AF_ERR_UNKNOWN:
     default:                        return "Unknown error";
     }
-}
 }
