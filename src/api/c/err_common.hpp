@@ -17,6 +17,8 @@
 #include <defines.hpp>
 #include <vector>
 
+inline namespace array_fire_inline {
+
 class AfError   : public std::logic_error
 {
     std::string functionName;
@@ -207,3 +209,5 @@ void print_error(const std::string &msg);
 
 static const int MAX_ERR_SIZE = 1024;
 std::string& get_global_error_string();
+
+}

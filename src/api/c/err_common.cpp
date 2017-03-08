@@ -25,6 +25,8 @@
 using std::string;
 using std::stringstream;
 
+inline namespace array_fire_inline {
+
 AfError::AfError(const char * const func,
                  const char * const file,
                  const int line,
@@ -252,4 +254,5 @@ const char *af_err_to_string(const af_err err)
     case AF_ERR_UNKNOWN:
     default:                        return "Unknown error";
     }
+}
 }
