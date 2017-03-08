@@ -197,7 +197,7 @@ IF(DEFINED BLAS_SYM_FILE)
 
 ELSE(DEFINED BLAS_SYM_FILE)
 
-ADD_LIBRARY(afcpu SHARED
+ADD_LIBRARY(afcpu
             ${cpu_headers}
             ${cpu_sources}
             ${backend_headers}
